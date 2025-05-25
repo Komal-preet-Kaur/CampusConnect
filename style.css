@@ -2,9 +2,16 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'); */
 
 body {
+    
     font-family: 'Inter', sans-serif; /* Apply Inter font */
 }
+#login-signup-page  {
+    margin-top: 8%;
+}
 
+#discover-page , #connections-page ,#board-page {
+    margin-top: 5%;
+}
 /* Custom scrollbar for chat messages, optional */
 #chat-messages::-webkit-scrollbar {
     width: 8px;
