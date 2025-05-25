@@ -1,0 +1,51 @@
+/* Import Google Fonts if not using CDN in HTML directly */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'); */
+
+body {
+    font-family: 'Inter', sans-serif; /* Apply Inter font */
+}
+
+/* Custom scrollbar for chat messages, optional */
+#chat-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-messages::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Dark mode scrollbar */
+body.dark #chat-messages::-webkit-scrollbar-track {
+    background: #333;
+}
+
+body.dark #chat-messages::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+body.dark #chat-messages::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+/* Basic animation for page transitions (manual handling in JS) */
+.page-transition-enter-active,
+.page-transition-leave-active {
+  transition: opacity 0.3s ease;
+}
+.page-transition-enter-from,
+.page-transition-leave-to {
+  opacity: 0;
+}
+
+
+/* You can add more custom styles here if Tailwind isn't enough for specific elements */
